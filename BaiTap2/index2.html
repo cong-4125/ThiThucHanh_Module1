@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr, x) {
+        if (arr.indexOf(x) == -1) {
+            return arr;
+        } else {
+            let arr1 = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (x != arr[i]) {
+                    arr1.push(arr[i]);
+                }
+            }
+            return arr1;
+        }
+
+    }
+
+</script>
+</body>
+</html>

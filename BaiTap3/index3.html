@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonacci(num) {
+        if (num == 0) {
+            return true;
+        }
+        if (num == 1) {
+            return true;
+        }
+        let fibo1 = 1;
+        let fibo2 = 1;
+        let sum = 0;
+        while (sum < num) {
+            sum = fibo1 + fibo2;
+            fibo1 = fibo2;
+            fibo2 = sum;
+        }
+        if (sum == num) {
+            return true;
+        }
+        return false;
+    }
+
+</script>
+</body>
+</html>
